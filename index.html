@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra de Boletos de Avión - LATAM</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  .navbar {
+    background-color: #002147; /* Color oscuro característico de LATAM */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    background-image: url('https://www.100hdwallpapers.com/wallpapers/1920x1200/airplane_wing-widescreen_wallpapers.jpg'); /* Imagen de un avión de LATAM */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .search-container {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: -50px 15% 20px 15%;
+    position: relative;
+    z-index: 10;
+  }
+  .search-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Agrega espacio entre los elementos de formulario */
+  }
+  .search-container input, .search-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .search-container button {
+    background-color: #ff6f00; /* Color vibrante de LATAM */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .search-container button:hover {
+    background-color: #e65a00; /* Oscurecimiento del color al pasar el mouse */
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .card {
+    width: 30%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .card h3 {
+    color: #002147;
+  }
+  footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <div>
+    <img alt="logo" src="https://s.latamairlines.com/icons/design-system/logos/panamericanos2023.svg" style="width: 150px;">
+  </div>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Vuelos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Información</a>
+    <a href="#">Contacto</a>
+  </nav>
+</div>
+<div class="hero">
+  <h1>Encuentra y Reserva tu Vuelo</h1>
+</div>
+<div class="search-container">
+  <form id="search-form">
+    <input type="text" placeholder="Origen" required>
+    <input type="text" placeholder="Destino" required>
+    <input type="date" placeholder="Fecha de ida" required>
+    <input type="number" placeholder="Pasajeros" min="1" required>
+    <button type="submit">Buscar Vuelos</button>
+  </form>
+</div>
+<div class="card-container">
+  <div class="card">
+    <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_638/v1604613096/assets/f3/b69d1e-ec5e-4269-bed7-e0169f510db2/original/rental-car.jpg" alt="Alquiler de Autos">
+    <h3>Alquiler de Autos</h3>
+    <p>Encuentra el auto perfecto para tu viaje.</p>
+  </div>
+  <div class="card">
+    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/463156637.jpg?k=5d913fb55963d82c13fe5960117723b5d57007e15e813be871395bf090418f2f&o=&hp=1" alt="Reserva de Hoteles">
+    <h3>Reserva de Hoteles</h3>
+    <p>Mejores hoteles al mejor precio garantizado.</p>
+  </div>
+  <div class="card">
+    <img src="https://static1.eskypartners.com/travelguide/programy-lojalnosciowe-i-sojusze-lotnicze.jpg" alt="Programa de Fidelidad">
+    <h3>Programa de Fidelidad</h3>
+    <p>Únete y comienza a acumular millas hoy.</p>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2023 LATAM Airlines Group</p>
+</footer>
+<script>
+  // Aquí podrías agregar JavaScript para la interactividad si es necesario
+</script>
+</body>
+</html>
